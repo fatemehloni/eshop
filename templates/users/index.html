@@ -1,8 +1,109 @@
 {% extends 'users/base.html' %}
+
 {% block title %}Home page {% endblock %}
 {% block content %}
 {% include 'users/_includes/navigations.html' %}
+<div class="container">
+  <div class="row">
+    <div class="col-3" >
+     <img class="d-block w-100" src="{{ url_for('static',filename='images/huawei Y5-290x216-2-01.png') }}" alt="huawei Y5">
+        <p>گوشی هواوی Y5 lite+ سیمکارت دائمی ایرانسل</p>
+    </div>
+    <div class="col-9" >
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{{ url_for('static',filename='images/E-shop-FA-.jpg') }}" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{ url_for('static',filename='images/Fathers-day---shop---17-esfand-98-FA.jpg') }}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{ url_for('static',filename='images/golden_fa.jpg') }}" alt="Third slide">
+    </div>
+      <div class="carousel-item">
+      <img class="d-block w-100" src="{{ url_for('static',filename='images/prepaid sim banner-03.png') }}" alt="4th slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="{{ url_for('static',filename='images/repair project eshop banner-01.png') }}" alt="5th slide">
+    </div>
+       <div class="carousel-item">
+      <img class="d-block w-100" src="{{ url_for('static',filename='images/TD-LTE-Offer-21-Day-98-FA.jpg') }}" alt="6th slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">قبلی</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">بعذی</span>
+  </a>
+</div>
+    </div>
+
+  </div>
+
+<div class="row">
+    <div class="col-3">
+      <img class="d-block w-100" src="{{ url_for('static',filename='images/sideBanner1.jpg') }}" alt="huawei Y5">
+        <p>ایرانسلی شو # دنیاتو تغییر بده</p>
+        <a href="#">ترابرد رایگان به شبکه ایرانسل</a>
+    </div>
+    <div class="col-9" >
+       <img class="d-block w-100" src="{{ url_for('static',filename='images/prepaid sim banner-02.png') }}" alt="huawei Y5">
+    </div>
+
+  </div>
+<div class="row">
+    <div class="col-3">
+
+        <form action="#" style="float: right">
+            <label style="float: right">شارژ مستقیم</label><br>
+            <label style="float: right">شماره تلفن همراه</label><br>
+            <input type="text" ><br>
+
+  <select class="form-control" id="sel1">
+    <option>1000</option>
+    <option>2000</option>
+    <option>5000</option>
+    <option>10000</option>
+      <option>20000</option>
+      <option>سایر مبالغ</option>
+  </select>
+        </form>
+
+    </div>
+    <div class="col-9" >
+       <div class="row">
+           <div class="col-3"><a href="#">مودم اینترنت تسل 4 ثابت(TD-LTE)</a> </div>
+           <div class="col-3"><a href="#">مودم همراه3G/4G/4.5G </a></div>
+           <div class="col-6"><a href="#">بیشتر</a></div>
+    </div>
+        <div class="row">
+         <div class="col-4">
+              <img class="d-block w-100" src="{{ url_for('static',filename='images/sideBanner1.jpg') }}" alt="huawei Y5">
+         </div>
+           <div class="col-4">
+                <img class="d-block w-100" src="{{ url_for('static',filename='images/sideBanner1.jpg') }}" alt="huawei Y5">
+           </div>
+           <div class="col-4">
+                <img class="d-block w-100" src="{{ url_for('static',filename='images/sideBanner1.jpg') }}" alt="huawei Y5">
+           </div>
+
+  </div>
+</div>
 {% block js %}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
